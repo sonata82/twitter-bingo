@@ -23,6 +23,8 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<kotlin.version>1.2.20</kotlin.version>
+		<junit-jupiter.version>5.0.0</junit-jupiter.version>
+		<junit-platform.version>1.0.0</junit-platform.version>
 	</properties>
 
 	<dependencies>
@@ -55,15 +57,53 @@
 			<artifactId>penicillin</artifactId>
 			<version>1.4.0</version>
 		</dependency>
+		<dependency>
+			<groupId>net.amygdalum</groupId>
+			<artifactId>stringsearchalgorithms</artifactId>
+			<version>0.3.17</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+			<exclusions>
+				<!-- Exclude JUnit 4 -->
+				<exclusion>
+					<groupId>junit</groupId>
+					<artifactId>junit</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>io.projectreactor</groupId>
 			<artifactId>reactor-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.junit.platform</groupId>
+			<artifactId>junit-platform-engine</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.junit.platform</groupId>
+			<artifactId>junit-platform-launcher</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>name.falgout.jeffrey.testing.junit5</groupId>
+			<artifactId>mockito-extension</artifactId>
+			<version>1.0.0</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
