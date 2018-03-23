@@ -1,4 +1,5 @@
 package de.remk0.twitterbingo
+
 import org.springframework.data.annotation.Id;
 
 data class BingoCard(@Id val id: String, private val size: Int, val words: List<String>) {

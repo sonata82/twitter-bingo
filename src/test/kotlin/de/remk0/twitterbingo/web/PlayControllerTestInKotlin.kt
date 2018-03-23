@@ -31,12 +31,12 @@ internal class PlayControllerTestInKotlin(
     @Test
     fun play() {
         val bingoCard = BingoCard("test", 3, listOf("upper-left", "upper-middle", "upper-right", "center-left", "center-middle", "center-right", "lower-left", "lower-middle", "lower-right"))
-        given(bingoCardRepository.findById("1")).willReturn(Optional.of(bingoCard))
-        given(twitterClient.read(2L)).willReturn(listOf("upper-left", "upper-Middle", "upper-right"))
+        given(bingoCardRepository.findById("test")).willReturn(Optional.of(bingoCard))
+        given(twitterClient.read(2L)).willReturn(listOf("somewhere over the upper-left corner", "how about some upper-Middle?", "where are going upper-right"))
 
         val uri = UriComponentsBuilder
                 .fromUriString("/play")
-                .queryParam("bingoCardId", "1")
+                .queryParam("bingoCardId", "test")
                 .queryParam("twitterUserId", "2")
                 .build().toUri()
         val statusCode = this.restTemplate.getForEntity<String>(uri).statusCode

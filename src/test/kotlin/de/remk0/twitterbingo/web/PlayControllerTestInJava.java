@@ -39,9 +39,9 @@ public class PlayControllerTestInJava {
         BingoCard bingoCard = new BingoCard("test", 3, Arrays.asList("upper-left", "upper-middle", "upper-right", "center-left", "center-middle", "center-right", "lower-left", "lower-middle", "lower-right"));
         given(bingoCardRepository.findById("1")).willReturn(Optional.of(bingoCard));
         ArrayList<String> feed = new ArrayList<>();
-        feed.add("upper-left");
-        feed.add("upper-middle");
-        feed.add("upper-right");
+        feed.add("somewhere over the upper-left corner");
+        feed.add("how about some upper-Middle?");
+        feed.add("where are going upper-right");
         given(twitterClient.read(2L)).willReturn(feed);
 
         URI uri = UriComponentsBuilder
