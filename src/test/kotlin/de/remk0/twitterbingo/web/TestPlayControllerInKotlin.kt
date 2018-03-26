@@ -19,7 +19,7 @@ import java.util.*
 
 @Extensions(ExtendWith(SpringExtension::class), ExtendWith(MockitoExtension::class))
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-internal class PlayControllerTestInKotlin(
+internal class TestPlayControllerInKotlin(
         @Autowired private val restTemplate : TestRestTemplate) {
 
     @MockBean
