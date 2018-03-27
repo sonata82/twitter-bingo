@@ -9,7 +9,7 @@ import twitter4j.conf.ConfigurationBuilder
 
 @Configuration
 @EnableConfigurationProperties(Twitter4JProperties::class)
-class Twitter4jAutoConfiguration(val properties: Twitter4JProperties) {
+class Twitter4JAutoConfiguration(val properties: Twitter4JProperties) {
 
     @Bean
     fun twitterFactory(): TwitterFactory {
