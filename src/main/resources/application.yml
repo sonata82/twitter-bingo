@@ -1,0 +1,8 @@
+bucket4j:
+  enabled: true
+  url: /*
+  rate-limits:
+  - bandwidths:
+    - capacity: 5
+      time: 10
+      unit: seconds
