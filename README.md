@@ -15,8 +15,8 @@ Start the application and create a bingo card by POSTing to the `bingoCards` end
 
     curl -H "Content-Type: application/json" -X POST -d '{"id":"myFirstBingoCard","size":"3","words":["upper-left", "upper-middle", "upper-right", "center-left", "center-middle", "center-right", "lower-left", "lower-middle", "lower-right"]}' http://localhost:8080/bingoCards
 
-Now start playing by entering someone's Twitter user id:
+Now start playing by entering someone's [Twitter user id](https://tweeterid.com):
 
-    curl http://localhost:8080/play?bingoCardId=myFirstBingoCard\&twitterUserId= 
+    curl -i http://localhost:8080/play?bingoCardId=myFirstBingoCard\&twitterUserId= 
 
 If a row can be filled, either horizontal, vertical or diagonal, the server returns `200`. Otherwise, it will return `404`.
