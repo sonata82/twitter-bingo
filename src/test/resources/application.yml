@@ -4,5 +4,5 @@ bucket4j:
   rate-limits:
   - bandwidths:
     - capacity: 5
-      time: 1
+      time: 10
       unit: seconds

@@ -16,6 +16,6 @@ internal class Bucket4JConfigurationServletFilterTest {
 
     @Test
     fun contextLoads() {
-        assert(environment!!.getProperty("bucket4j.rate-limits[0].bandwidths[0].time").equals("1"))
+        assert(environment!!.getProperty("bucket4j.rate-limits[0].bandwidths[0].time").equals("10"))
     }
 }
