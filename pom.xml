@@ -24,7 +24,7 @@
 		<java.version>1.8</java.version>
 		<kotlin.version>1.2.21</kotlin.version>
 		<junit-jupiter.version>5.0.0</junit-jupiter.version>
-		<junit-platform.version>1.0.0</junit-platform.version>
+		<junit-platform.version>1.2.0</junit-platform.version>
 	</properties>
 
 	<dependencies>
@@ -143,8 +143,8 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<!-- Due to a memory leak in Surefire 2.20 and issues running on Java 9, the junit-platform-surefire-provider currently only works with Surefire 2.19.1. -->
-				<version>2.19.1</version>
+				<!-- See https://junit.org/junit5/docs/current/user-guide/#running-tests-build-maven -->
+				<version>2.21.0</version>
 				<dependencies>
 					<dependency>
 						<groupId>org.junit.platform</groupId>
