@@ -3,7 +3,7 @@ package de.remk0.twitterbingo.web
 import de.remk0.twitterbingo.BingoCard
 import de.remk0.twitterbingo.BingoCardRepository
 import de.remk0.twitterbingo.TwitterClient
-import name.falgout.jeffrey.testing.junit5.MockitoExtension
+import name.falgout.jeffrey.testing.junit.mockito.MockitoExtension
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
 import org.junit.jupiter.api.extension.Extensions
