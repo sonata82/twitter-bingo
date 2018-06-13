@@ -1,5 +1,6 @@
 # Twitter Bingo
 [![Build Status](https://travis-ci.org/sonata82/twitter-bingo.svg?branch=master)](https://travis-ci.org/sonata82/twitter-bingo)
+[![Dependabot](https://img.shields.io/badge/watched%20by-dependabot-blue.svg)](https://dependabot.com)
 
 This Spring Boot application provides a web service for playing [Buzzword Bingo](https://en.wikipedia.org/wiki/Buzzword_bingo) with the Timeline of a someone's Twitter account.
 
