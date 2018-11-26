@@ -16,7 +16,7 @@ class RateLimitingSimulation extends Simulation {
   })
 
   val httpProtocol = http
-    .baseURL("http://localhost:8080")
+    .baseUrl("http://localhost:8080")
     .acceptHeader("application/json")
     .acceptEncodingHeader("gzip, deflate")
     .userAgentHeader("Gatling")
@@ -46,7 +46,7 @@ class RateLimitingSimulation extends Simulation {
                |      "lower-left", "lower-middle", "lower-right"
                |    ]
                |}
-            """.stripMargin)).asJSON
+            """.stripMargin)).asJson
           .check(status.in(201))
       )
     }
