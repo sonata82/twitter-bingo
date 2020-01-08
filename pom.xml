@@ -106,7 +106,7 @@
 		<dependency>
 			<groupId>name.falgout.jeffrey.testing.junit5</groupId>
 			<artifactId>mockito-extension</artifactId>
-			<version>1.1.1</version>
+			<version>1.2.1</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
